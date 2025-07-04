@@ -36,7 +36,7 @@
     <title>git Tutorial</title>
   </head>
   <body>
-    <main class="container max-w-screen-md mx-auto py-5">
+    <main class="container max-w-screen-md mx-auto py-5 px-3">
       <section>
         <div class="flex justify-center items-center border-b-2 pb-3">
           <img
@@ -69,7 +69,7 @@
               <!--  -->
             </div>
             <div>
-              <h2 class="serif capitalize text-3xl">
+              <h2 class="serif text-2xl md:text-3xl lg:text-4xl py-2">
                 getting started: installation
               </h2>
             </div>
@@ -124,35 +124,37 @@
       <section class="py-5">
         <div>
           <div>
-            <h2 class="text-3xl serif py-2">🔶 Step-by-Step Basic Usage</h2>
+            <h2 class="serif text-2xl md:text-3xl lg:text-4xl py-2">
+              🔶 Step-by-Step Basic Usage
+            </h2>
           </div>
           <div class="grid grid-cols-1">
             <div class="my-1">
-              <h3>1️⃣ Initialize Repository</h3>
+              <h3 class="jost text-xl">1️⃣ Initialize Repository</h3>
               <p class="bg-red-50 p-3 rounded-md jost">git init</p>
             </div>
             <div class="my-1">
-              <h3>2️⃣ Add Files</h3>
+              <h3 class="jost text-xl">2️⃣ Add Files</h3>
               <p class="bg-red-50 p-3 rounded-md jost">
                 git add <i>file_name</i>
               </p>
             </div>
             <div class="my-1">
-              <h3>3️⃣ Commit Changes</h3>
+              <h3 class="jost text-xl">3️⃣ Commit Changes</h3>
               <p class="bg-red-50 p-3 rounded-md jost">
                 Changes git commit -m "initial commit"
               </p>
             </div>
             <div class="my-1">
-              <h3>4️⃣ Check Status</h3>
+              <h3 class="jost text-xl">4️⃣ Check Status</h3>
               <p class="bg-red-50 p-3 rounded-md jost">git status</p>
             </div>
             <div class="my-1">
-              <h3>5️⃣ View Commit History</h3>
+              <h3 class="jost text-xl">5️⃣ View Commit History</h3>
               <p class="bg-red-50 p-3 rounded-md jost">git log</p>
             </div>
             <div class="my-1">
-              <h3>6️⃣ Set Git Identity</h3>
+              <h3 class="jost text-xl">6️⃣ Set Git Identity</h3>
               <p>
                 <li class="bg-red-50 p-1 rounded-md jost">
                   git config --global user.name "Your Name"
@@ -167,11 +169,277 @@
       </section>
 
       <!-- Working with Remote Repositories (GitHub, GitLab) -->
-       <section class="py-5">
+      <section class="py-5">
         <div>
-            <h2>🌍 Working with Remote Repositories (GitHub, GitLab)</h2>
+          <h2 class="serif text-2xl md:text-3xl lg:text-4xl py-2">
+            🌍 Working with Remote Repositories (GitHub, GitLab)
+          </h2>
         </div>
-       </section>
+        <div>
+          <div class="my-1">
+            <h3 class="jost text-xl">Clone Remote Repository</h3>
+            <p class="bg-red-50 p-3 rounded-md jost">
+              git clone <i>repository_URL</i>
+            </p>
+          </div>
+          <div class="my-1">
+            <h3 class="jost text-xl">Push Changes</h3>
+            <p class="bg-red-50 p-3 rounded-md jost">
+              git push origin <i>branch_name</i>
+            </p>
+          </div>
+          <div class="my-1">
+            <h3 class="jost text-xl">Pull Updates</h3>
+            <p class="bg-red-50 p-3 rounded-md jost">
+              git pull origin <i>branch_name</i>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <div>
+            <h2 class="serif text-2xl md:text-3xl lg:text-4xl py-2">
+              🌳 Branching and Merging
+            </h2>
+          </div>
+          <div class="my-1">
+            <h3 class="jost text-xl">Create New Branch</h3>
+            <p class="bg-red-50 p-3 rounded-md jost">
+              git branch <i>branch_name</i>
+            </p>
+          </div>
+          <div class="my-1">
+            <h3 class="jost text-xl">Switch Branches</h3>
+            <p class="bg-red-50 p-3 rounded-md jost">
+              git checkout <i>branch_name</i>
+            </p>
+          </div>
+          <div class="my-1">
+            <h3 class="jost text-xl">Create and Switch</h3>
+            <p class="bg-red-50 p-3 rounded-md jost">
+              git checkout -b <i>branch_name</i>
+            </p>
+          </div>
+          <div class="my-1">
+            <h3 class="jost text-xl">Merge Branches</h3>
+            <p class="bg-red-50 p-3 rounded-md jost">
+              git merge <i>branch_name</i>
+            </p>
+          </div>
+          <div class="my-1">
+            <h3 class="jost text-xl">Delete Branch</h3>
+            <p class="bg-red-50 p-3 rounded-md jost">
+              git branch -d <i>branch_name</i>
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Resolving Conflicts -->
+      <section class="py-5">
+        <div>
+          <h2 class="serif text-2xl md:text-3xl lg:text-4xl py-2">
+            ✂️ Resolving Conflicts
+          </h2>
+        </div>
+        <div>
+          <ul>
+            <li class="list-disc jost">
+              If merging causes conflicts, Git will indicate it.
+            </li>
+            <li class="list-disc jost">Resolve manually, then:</li>
+          </ul>
+          <p class="bg-red-50 p-3 rounded-md jost">
+            git add <i>resolved_file</i>
+          </p>
+          <p class="bg-red-50 p-3 rounded-md jost mt-2 jost">
+            git commit -m "Resolved conflict"
+          </p>
+        </div>
+      </section>
+
+      <!-- Undoing Changes -->
+      <section class="py-5">
+        <div>
+          <h2 class="serif text-2xl md:text-3xl lg:text-4xl py-2">
+            🔁 Undoing Changes
+          </h2>
+        </div>
+        <div>
+          <li class="list-disc jost text-xl my-2">
+            Undo last commit (keep changes):
+          </li>
+          <p class="bg-red-50 p-3 rounded-md jost mt-2 jost">
+            git reset --soft HEAD~1
+          </p>
+        </div>
+        <div>
+          <li class="list-disc jost text-xl my-2">Discard unstaged changes:</li>
+          <p class="bg-red-50 p-3 rounded-md jost mt-2 jost">
+            git checkout -- <i>file_name</i>
+          </p>
+        </div>
+      </section>
+
+      Advanced Git Usage
+      <section>
+        <div>
+          <h2 class="serif text-2xl md:text-3xl lg:text-4xl py-2">
+            🙎‍♂️ Advanced Git Usage
+          </h2>
+        </div>
+        <div>
+          <h2 class="jost text-xl">1️⃣ Stashing Changes</h2>
+          <p class="bg-red-50 p-3 rounded-md jost mt-2 jost">
+            git stash <br />git stash pop
+          </p>
+        </div>
+        <div>
+          <h2 class="jost text-xl">2️⃣ Rebase</h2>
+          <p class="rounded-md jost jost">Rewrite commit history:</p>
+          <p class="bg-red-50 p-3 rounded-md jost mt-2 jost">
+            git checkout feature_branch <br />
+            git rebase main
+          </p>
+        </div>
+        <div>
+          <h2 class="jost text-xl">3️⃣ Cherry-Pick</h2>
+          <p class="rounded-md jost jost">
+            Apply a specific commit from one branch to another:
+          </p>
+          <p class="bg-red-50 p-3 rounded-md jost mt-2 jost">
+            git cherry-pick <i>commit_hash</i>
+          </p>
+        </div>
+        <div>
+          <h2 class="jost text-xl">4️⃣ Tagging</h2>
+          <p class="rounded-md jost jost">Create tags to mark versions:</p>
+          <p class="bg-red-50 p-3 rounded-md jost mt-2 jost">
+            git tag -a v1.0 -m "version 1.0 release" <br />
+            git push --tags
+          </p>
+        </div>
+        <div>
+          <h2 class="jost text-xl">5️⃣ Amend Commit</h2>
+          <p class="rounded-md jost jost">
+            Modify last commit message or content:
+          </p>
+          <p class="bg-red-50 p-3 rounded-md jost mt-2 jost">
+            git commit --amend -m "New commit message"
+          </p>
+        </div>
+      </section>
+
+      <!-- Cleaning Repository -->
+      <section>
+        <div>
+          <h2 class="serif text-2xl md:text-3xl lg:text-4xl py-2">
+            🧹 Cleaning Repository
+          </h2>
+        </div>
+        <div>
+          <li class="list-disc jost text-xl my-2">Remove untracked files:</li>
+          <p class="bg-red-50 p-3 rounded-md jost mt-2 jost">git clean -f</p>
+        </div>
+        <div>
+          <li class="list-disc jost text-xl my-2">
+            Remove untracked directories too:
+          </li>
+          <p class="bg-red-50 p-3 rounded-md jost mt-2 jost">git clean -fd</p>
+        </div>
+      </section>
+
+      <!-- best practice -->
+      <section class="py-5">
+        <div>
+          <h2 class="serif text-2xl md:text-3xl lg:text-4xl py-2">
+            📚 Best Practices
+          </h2>
+          <ul>
+            <li class="list-disc jost text-xl my-2">
+              Write meaningful commit messages.
+            </li>
+            <li class="list-disc jost text-xl my-2">Commit often.</li>
+            <li class="list-disc jost text-xl my-2">
+              Keep branches small and focused.
+            </li>
+            <li class="list-disc jost text-xl my-2">
+              Regularly sync branches with main.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="py-5">
+        <div>
+          <h2 class="serif text-2xl md:text-3xl lg:text-4xl py-2">
+            🔥 Git Expert Commands & Workflow
+          </h2>
+        </div>
+        <div>
+          <h2 class="jost text-xl">1️⃣ Interactive Rebase</h2>
+          <p class="rounded-md jost jost">
+            Squash commits, reorder, or edit history:
+          </p>
+          <p class="bg-red-50 p-3 rounded-md jost mt-2 jost">
+            git rebase -i HEAD~3
+          </p>
+        </div>
+        <div>
+          <h2 class="jost text-xl">2️⃣ Submodules</h2>
+          <p class="rounded-md jost jost">
+            Include external repositories within your repo:
+          </p>
+          <p class="bg-red-50 p-3 rounded-md jost mt-2 jost">
+            git submodule add <i>repo_url</i> <br />
+            git submodule update --init --recursive
+          </p>
+        </div>
+        <div>
+          <h2 class="jost text-xl">3️⃣ Bisect (Finding Bugs)</h2>
+          <p class="rounded-md jost jost">Identify the commit causing a bug:</p>
+          <p class="bg-red-50 p-3 rounded-md jost mt-2 jost">
+            git bisect start <br />
+            git bisect bad <br />
+            git bisect good <i>good_commit_hash</i>
+          </p>
+        </div>
+        <div>
+          <h2 class="jost text-xl">4️⃣ Aliases</h2>
+          <p class="rounded-md jost jost">Create shortcuts for commands:</p>
+          <p class="bg-red-50 p-3 rounded-md jost mt-2 jost">
+            git config --global alias.st "status"
+          </p>
+        </div>
+        <div>
+          <h2 class="jost text-xl">5️⃣ Hooks</h2>
+          <p class="rounded-md jost jost">
+            Run scripts automatically at specific points:
+          </p>
+          <li class="list-disc jost text-xl my-2">pre-commit</li>
+          <li class="list-disc jost text-xl my-2">commit-msg</li>
+          <li class="list-disc jost text-xl my-2">pre-push</li>
+          <p>
+            <i class="jost py-1"
+              >(Create custom scripts in .git/hooks/ directory.)</i
+            >
+          </p>
+        </div>
+      </section>
+      <section class="px-5 flex justify-center items-center">
+        <div class="md:flex">
+          <!--  -->
+          <h2 class="serif px-1">Documentation</h2>
+          <a
+            class="jost underline"
+            href="https://git-scm.com/doc"
+            target="_blank"
+            href=""
+            >For Official Documentation</a
+          >
+        </div>
+      </section>
     </main>
   </body>
 </html>
