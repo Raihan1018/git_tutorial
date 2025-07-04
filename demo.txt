@@ -1,0 +1,116 @@
+Here's the extracted text from the provided images, page by page:
+
+**Page 2/7**
+git init
+2 Add Files
+git add <file_name>
+git add . # Add all files in current directory
+3 Commit Changes
+git commit -m "initial commit"
+4 Check Status
+git status
+5 View Commit History
+git log
+6 Set Git Identity
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+Working with Remote Repositories (GitHub, GitLab)
+Clone Remote Repository
+git clone <repository_URL>
+Push Changes
+
+**Page 3/7**
+git push origin <branch_name>
+Pull Updates
+git pull origin <branch_name>
+Branching and Merging
+• Create New Branch
+git branch <branch_name>
+• Switch Branches
+git checkout <branch_name>
+• Create and Switch
+git checkout -b <branch_name>
+• Merge Branches
+git merge <branch_name>
+• Delete Branch
+git branch -d <branch_name>
+Resolving Conflicts
+• If merging causes conflicts, Git will indicate it.
+• Resolve manually, then:
+git add <resolved_file>
+
+**Page 4/7**
+git commit -m "Resolved conflict"
+Undoing Changes
+• Undo last commit (keep changes):
+git reset --soft HEAD~1
+• Undo last commit (discard changes):
+git reset --hard HEAD~1
+• Discard unstaged changes:
+git checkout -- <file_name>
+Advanced Git Usage
+1 Stashing Changes
+Temporarily store changes without committing:
+git stash
+git stash pop
+2 Rebase
+Rewrite commit history:
+git checkout feature_branch
+git rebase main
+3 Cherry-Pick
+Apply a specific commit from one branch to another:
+git cherry-pick <commit_hash>
+
+**Page 5/7**
+4 Tagging
+Create tags to mark versions:
+git tag -a v1.0 -m "version 1.0 release"
+git push --tags
+5 Amend Commit
+Modify last commit message or content:
+git commit --amend -m "New commit message"
+Cleaning Repository
+• Remove untracked files:
+git clean -f
+• Remove untracked directories too:
+git clean -fd
+Best Practices
+• Write meaningful commit messages.
+• Commit often.
+• Keep branches small and focused.
+• Regularly sync branches with main.
+Git Expert Commands & Workflow
+1 Interactive Rebase
+Squash commits, reorder, or edit history:
+
+**Page 6/7**
+git rebase -i HEAD~3
+2 Submodules
+Include external repositories within your repo:
+git submodule add <repo_url>
+git submodule update --init --recursive
+3 Bisect (Finding Bugs)
+Identify the commit causing a bug:
+git bisect start
+git bisect bad
+git bisect good <good_commit_hash>
+4 Aliases
+Create shortcuts for commands:
+git config --global alias.st "status"
+5 Hooks
+Run scripts automatically at specific points:
+• pre-commit
+• commit-msg
+• pre-push
+(Create custom scripts in .git/hooks/ directory.)
+Resources to Master Git
+• Interactive Tutorials:
+o Learn Git Branching
+o Git Immersion
+
+**Page 7/7**
+• Documentation:
+o Git Official Documentation
+• Practice Repositories:
+o Create a practice repo on GitHub or GitLab.
+You're now equipped to master Git!

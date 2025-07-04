@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://git-scm.com/images/logos/logomark-orange@2x.png"
+      type="image/x-icon"
+    />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .serif {
+        font-family: "DM Serif Display", serif;
+      }
+      .jost {
+        font-family: "Jost", sans-serif;
+      }
+    </style>
+    <title>git Tutorial</title>
+  </head>
+  <body>
+    <main class="container max-w-screen-md mx-auto py-5">
+      <section>
+        <div class="flex justify-center items-center border-b-2 pb-3">
+          <img
+            class="w-[10%]"
+            src="https://git-scm.com/images/logos/logomark-orange@2x.png"
+            alt="git"
+          />
+          <h1 class="text-2xl serif px-3 capitalize md:text-4xl">
+            git tutorial from scratch to expert:
+          </h1>
+        </div>
+      </section>
+
+      <!-- git intro -->
+      <section class="py-5">
+        <div class="">
+          <h2 class="text-3xl serif my-2">🚀 What is Git?</h2>
+          <p class="jost text-xl">
+            Git is a version control system that developers use to track changes
+            in code and collaborate with others on software projects.
+          </p>
+        </div>
+      </section>
+
+      <!-- Installation of git -->
+      <section>
+        <div>
+          <div class="flex space-x-5">
+            <div class="w-10 h-10 bg-green-500 rounded-full">
+              <!--  -->
+            </div>
+            <div>
+              <h2 class="serif capitalize text-3xl">
+                getting started: installation
+              </h2>
+            </div>
+          </div>
+          <div class="border-b-2 py-3">
+            <ul>
+              <li class="jost font-semibold text-2xl list-disc">
+                Windows/Mac/Linus:
+              </li>
+            </ul>
+            <a
+              class="underline jost text-xl"
+              href="https://git-scm.com/downloads"
+              target="_blank"
+              >Download Git</a
+            >
+            <ul>
+              <li class="jost font-semibold text-2xl list-disc">
+                Verify Installation:
+              </li>
+              <p class="bg-red-50 p-3 rounded-md jost">git --version</p>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- basic concept -->
+      <section class="py-5">
+        <div>
+          <h2 class="capitalize text-3xl serif mt-2">🧾 basic concept</h2>
+        </div>
+        <div class="border-b-2 py-2">
+          <ul class="list-disc text-xl">
+            <li class="jost my-2">
+              <span class="serif">Repository (Repo):</span> Directory tracked by
+              Git
+            </li>
+            <li class="jost my-2">
+              <span class="serif">Commit:</span>A snapshot of your code
+            </li>
+            <li class="jost my-2">
+              <span class="serif">Branch:</span> Independent line of development
+            </li>
+            <li class="jost my-2">
+              <span class="serif">Clone:</span>Copy of a repository from remote
+              to local
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--  Step-by-Step Basic Usage -->
+      <section class="py-5">
+        <div>
+          <div>
+            <h2 class="text-3xl serif py-2">🔶 Step-by-Step Basic Usage</h2>
+          </div>
+          <div class="grid grid-cols-1">
+            <div class="my-1">
+              <h3>1️⃣ Initialize Repository</h3>
+              <p class="bg-red-50 p-3 rounded-md jost">git init</p>
+            </div>
+            <div class="my-1">
+              <h3>2️⃣ Add Files</h3>
+              <p class="bg-red-50 p-3 rounded-md jost">
+                git add <i>file_name</i>
+              </p>
+            </div>
+            <div class="my-1">
+              <h3>3️⃣ Commit Changes</h3>
+              <p class="bg-red-50 p-3 rounded-md jost">
+                Changes git commit -m "initial commit"
+              </p>
+            </div>
+            <div class="my-1">
+              <h3>4️⃣ Check Status</h3>
+              <p class="bg-red-50 p-3 rounded-md jost">git status</p>
+            </div>
+            <div class="my-1">
+              <h3>5️⃣ View Commit History</h3>
+              <p class="bg-red-50 p-3 rounded-md jost">git log</p>
+            </div>
+            <div class="my-1">
+              <h3>6️⃣ Set Git Identity</h3>
+              <p>
+                <li class="bg-red-50 p-1 rounded-md jost">
+                  git config --global user.name "Your Name"
+                </li>
+                <li class="bg-red-50 p-1 rounded-md jost">
+                  git config --global user.email "your.email@example.com
+                </li>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Working with Remote Repositories (GitHub, GitLab) -->
+       <section class="py-5">
+        <div>
+            <h2>🌍 Working with Remote Repositories (GitHub, GitLab)</h2>
+        </div>
+       </section>
+    </main>
+  </body>
+</html>
